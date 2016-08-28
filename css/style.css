@@ -1,0 +1,205 @@
+html {
+    width: 100%;
+    height: 100%;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background: #47c9af;
+    color: #74777b;
+    font-weight: 500;
+    font-size: 1em;
+    font-family: "Raleway", "Arial";
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+a:link, a:visited, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;;
+}
+
+*:after, *:before {
+    display: block;
+    cotent: "";
+}
+
+*:after {
+    clear: both;
+}
+
+.nav {
+    width: 820px;
+    height: 300px;
+    margin: 200px auto 0 auto;
+    font-weight: 300;
+}
+
+.nav ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 1em;
+    font-size: 1.5em;
+}
+
+.nav ul li a {
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.15em 0.25em 0;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+
+.nav a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.nav a:hover, .nav a:focus {
+    color: #fff;
+}
+
+.tooltip {
+    display: inline;
+    position: relative;
+    z-index: 999;
+}
+
+.tooltip-content {
+    position: absolute; /*定义了这个以后，元素自动转为块元素*/
+    z-index: 9999;
+    width: 80px;
+    height: 80px;
+    padding-top: 25px;
+    left: 50%;
+    margin-left: -40px;
+    bottom: 100%;
+    border-radius: 50%;
+    text-align: center;
+    background: #fff;
+    color: #47c9af;
+    opacity: 0;
+    margin-bottom: 20px;
+    cursor: default;
+    pointer-events: none;
+    -webkit-transition: opacity 0.3s -webkit-transform 0.3s;
+    transition: opacity 0.3s transform 0.3s;
+}
+
+.tooltip, .tooltip-content i {
+    /*opacity: 0;*/
+    -webkit-transition: opacity 0.3s -webkit-transform 0.3s;
+    transition: opacity 0.3s transform 0.3s;
+}
+
+.tooltip-content::after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 20px;
+    background: url(../img/tooltip1.svg) no-repeat center center;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin: -7px 0 0 -15px;
+}
+
+.tooltip-effect-1 .tooltip-content {
+    -webkit-transform: translate3d(0, 10px, 0) rotate3d(1, 1, 1, 45deg);
+    transform: translate3d(0, 10px, 0) rotate3d(1, 1, 1, 45deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-effect-1 .tooltip-content i {
+    -webkit-transform: scale3d(0, 0, 1);
+    transform: scale3d(0, 0, 1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale3d(0, 0, 1);
+    transform: scale3d(0, 0, 1);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+.tooltip-effect-2 .tooltip-content {
+    -webkit-transform: translate3d(0,10px,0);
+    transform: translate3d(0,10px,0);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-effect-2 .tooltip-content i {
+    -webkit-transform: translate3d(0,15px,0);
+    transform: translate3d(0,15px,0);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-effect-3 .tooltip-content {
+    -webkit-transform: translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+    transform: translate3d(0,10px,0) rotate3d(0,1,0,90deg);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-effect-3 .tooltip-content i {
+    -webkit-transform: scale3d(0,0,1);
+    transform: scale3d(0,0,1);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-effect-4 .tooltip-content {
+    -webkit-transform: translate3d(0,-20px,0);
+    transform: translate3d(0,-20px,0);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-effect-4 .tooltip-content i {
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-effect-5 .tooltip-content {
+    -webkit-transform: scale3d(0,0,1);
+    transform: scale3d(0,0,1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip-effect-5 .tooltip-content i {
+    -webkit-transform: translate3d(0,20px,0);
+    transform: translate3d(0,20px,0);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip:hover .tooltip-content,
+.tooltip:hover .tooltip-content i {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+}
